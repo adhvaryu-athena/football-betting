@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+scipy
+statsmodels
+matplotlib
+seaborn
+jupyter
+ipykernel
+nbformat
+nbconvert
+tqdm
+pytest

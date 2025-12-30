@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "football-betting"
+version = "0.1.0"
+description = "EPL 1X2 odds efficiency study utilities."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Student Project" }]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]

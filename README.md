@@ -15,6 +15,10 @@ Academic study on whether simple, transparent pre-match models can produce calib
    python -m venv .venv
    source .venv/bin/activate
    pip install -r requirements.txt
+   # Editable install to make `football_betting` importable
+   pip install -e . --no-build-isolation
+   # If offline, you can skip the editable install and instead set:
+   # export PYTHONPATH=src
    ```
 2) Download Football-Data.co.uk CSVs for EPL seasons (2016/17 through 2025/26) into `data/raw/`. Prefer files with closing odds (`*C` columns). Keep a consistent naming scheme (e.g., `E0_2025-26.csv`).
 3) Run tests:
