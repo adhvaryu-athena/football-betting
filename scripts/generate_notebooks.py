@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 from typing import List, Dict
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path.cwd().resolve()
 NB_DIR = PROJECT_ROOT / "notebooks"
 NB_DIR.mkdir(parents=True, exist_ok=True)
 

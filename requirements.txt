@@ -11,3 +11,5 @@ nbformat
 nbconvert
 tqdm
 pytest
+pyarrow
+fastparquet

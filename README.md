@@ -20,6 +20,13 @@ Academic study on whether simple, transparent pre-match models can produce calib
    # If offline, you can skip the editable install and instead set:
    # export PYTHONPATH=src
    ```
+3) Run the simple CLI pipeline (no notebooks):
+   ```bash
+   python -m football_betting.pipeline --data-dir data/raw --out-dir data/processed --stake 100
+   ```
+   This loads all CSVs in `data/raw`, selects best-available odds (closing preferred), computes no-vig probabilities, runs flat Home/Draw/Away backtests, and saves:
+   - `data/processed/market_epl.parquet`
+   - `data/processed/flat_backtest.csv`
 2) Download Football-Data.co.uk CSVs for EPL seasons (2016/17 through 2025/26) into `data/raw/`. Prefer files with closing odds (`*C` columns). Keep a consistent naming scheme (e.g., `E0_2025-26.csv`).
 3) Run tests:
    ```bash
